@@ -5,8 +5,9 @@ import { About, Contact, Experience, Feedbacks, Hero, Navbar, Tech, Works, Stars
 const App = () => {
   return (
     <BrowserRouter>
-      <div className="relative z-0 bg-primary">
-        <div className="bg-hero-pattern bg-cover bg-no-repeat bg-center">
+      <div className="bg-primary relative z-0">
+        {/* this bg-hero-pattern is setup in the tailwind.config.js */}
+        <div className="bg-hero-pattern bg-center bg-no-repeat bg-cover">
           <Navbar />
           <Hero />
         </div>
