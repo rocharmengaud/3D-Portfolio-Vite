@@ -35,7 +35,7 @@ const About = () => {
         <p className={styles.sectionSubText}>Introduction</p>
         <h2 className={styles.sectionHeadText}>Overview.</h2>
       </motion.div>
-      <motion.p variants={fadeIn('', '', 0.1, 1)} className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30x]">
+      <motion.p variants={fadeIn('', '', 0.5, 2)} className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30x]">
         I just graduated from{' '}
         <a
           href="https://openclassrooms.com/fr/paths/516-developpeur-dapplication-javascript-react"
