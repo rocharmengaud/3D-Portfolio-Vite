@@ -9,6 +9,24 @@ module.exports = {
   rules: {
     'react-refresh/only-export-components': ['warn', { allowConstantExport: true }],
     // IGNORING THREE JS PROPERTIES ERRORS
-    'react/no-unknown-property': ['error', { ignore: ['intensity', 'groundColor', 'object', 'position', 'rotation', 'options'] }],
+    'react/no-unknown-property': [
+      'error',
+      {
+        ignore: [
+          'intensity',
+          'groundColor',
+          'object',
+          'position',
+          'rotation',
+          'options',
+          'castShadow',
+          'receiveShadow',
+          'args',
+          'polygonOffset',
+          'polygonOffsetFactor',
+          'flatShading',
+        ],
+      },
+    ],
   },
 };
