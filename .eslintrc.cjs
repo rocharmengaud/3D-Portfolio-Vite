@@ -25,6 +25,8 @@ module.exports = {
           'polygonOffset',
           'polygonOffsetFactor',
           'flatShading',
+          'position-y',
+          'rotation-y',
         ],
       },
     ],
