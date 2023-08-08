@@ -42,6 +42,7 @@ const Contact = () => {
             <input
               type="text"
               name="name"
+              required
               value={name}
               onChange={(e) => setName(e.target.value)}
               placeholder="What is your name ?"
@@ -53,6 +54,7 @@ const Contact = () => {
             <input
               type="email"
               name="email"
+              required
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               placeholder="What is your email ?"
@@ -64,6 +66,7 @@ const Contact = () => {
             <textarea
               rows="7"
               name="message"
+              required
               value={message}
               onChange={(e) => setMessage(e.target.value)}
               placeholder="Feel free to ask me anything !"
