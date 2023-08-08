@@ -1,6 +1,5 @@
 import { useState, useRef } from 'react';
 import { motion } from 'framer-motion';
-import emailjs from '@emailjs/browser';
 
 import { styles } from '../styles';
 import { EarthCanvas } from './canvas';
@@ -10,16 +9,20 @@ import { slideIn } from '../utils/motion';
 const Contact = () => {
   const formRef = useRef();
 
-  const [form, setForm] = useState({
-    name: '',
-    email: '',
-    message: '',
-  });
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [message, setMessage] = useState('');
 
-  const [formLoading, setFormLoading] = useState(false);
+  const handleSubmit = (e) => {
+    e.preventDefault();
 
-  const handleChange = (event) => {};
-  const handleSubmit = (event) => {};
+    if (name && email && message) {
+      e.target.submit();
+      setName('');
+      setEmail('');
+      setMessage('');
+    }
+  };
 
   return (
     <div className="xl:mt-12 xl:flex-row flex flex-col-reverse gap-10 overflow-hidden">
@@ -27,14 +30,20 @@ const Contact = () => {
       <motion.div variants={slideIn('left', 'tween', 0.2, 1)} className="flex-[0.75] bg-black-100 p-8 rounded-2xl">
         <p className={styles.sectionSubText}>Get in touch</p>
         <h3 className={styles.sectionHeadText}>Contact.</h3>
-        <form ref={formRef} onSubmit={handleSubmit} className="flex flex-col gap-8 mt-12">
+        <form
+          ref={formRef}
+          method="POST"
+          action="https://getform.io/f/62705f5e-1a70-4374-b0bb-bbdf52735b5e"
+          onSubmit={handleSubmit}
+          className="flex flex-col gap-8 mt-12"
+        >
           <label className="flex flex-col">
             <span className="mb-4 font-medium text-white">Your name</span>
             <input
               type="text"
               name="name"
-              value={form.name}
-              onChange={handleChange}
+              value={name}
+              onChange={(e) => setName(e.target.value)}
               placeholder="What is your name ?"
               className="bg-tertiary placeholder:text-secondary px-6 py-4 font-medium text-white border-none rounded-lg outline-none"
             />
@@ -44,8 +53,8 @@ const Contact = () => {
             <input
               type="email"
               name="email"
-              value={form.email}
-              onChange={handleChange}
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
               placeholder="What is your email ?"
               className="bg-tertiary placeholder:text-secondary px-6 py-4 font-medium text-white border-none rounded-lg outline-none"
             />
@@ -55,14 +64,14 @@ const Contact = () => {
             <textarea
               rows="7"
               name="message"
-              value={form.message}
-              onChange={handleChange}
+              value={message}
+              onChange={(e) => setMessage(e.target.value)}
               placeholder="Feel free to ask me anything !"
               className="bg-tertiary placeholder:text-secondary px-6 py-4 font-medium text-white border-none rounded-lg outline-none"
             />
           </label>
           <button type="submit" className="bg-tertiary w-fit shadow-primary rounded-xl px-8 py-3 font-bold text-white shadow-md outline-none">
-            {formLoading ? 'Sending...' : 'Send'}
+            Send
           </button>
         </form>
       </motion.div>
