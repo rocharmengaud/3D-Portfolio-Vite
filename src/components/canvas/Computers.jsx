@@ -8,7 +8,7 @@ const ScreensModel = ({ isMobile }) => {
 
   return (
     <mesh>
-      <hemisphereLight intensity={1.5} groundColor="black" />
+      <hemisphereLight intensity={1.5} groundColor="grey" />
       <pointLight intensity={6} />
       <primitive
         object={screens.scene}
