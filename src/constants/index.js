@@ -14,7 +14,6 @@ import {
   mongodb,
   git,
   figma,
-  docker,
   meta,
   starbucks,
   tesla,
@@ -29,10 +28,6 @@ export const navLinks = [
   {
     id: 'about',
     title: 'About',
-  },
-  {
-    id: 'work',
-    title: 'Work',
   },
   {
     id: 'works',
@@ -112,63 +107,43 @@ const technologies = [
     name: 'figma',
     icon: figma,
   },
-  {
-    name: 'docker',
-    icon: docker,
-  },
 ];
 
 const experiences = [
   {
-    title: 'React.js Developer',
-    company_name: 'Starbucks',
-    icon: starbucks,
-    iconBg: '#383E56',
-    date: 'March 2020 - April 2021',
-    points: [
-      'Developing and maintaining web applications using React.js and other related technologies.',
-      'Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.',
-      'Implementing responsive design and ensuring cross-browser compatibility.',
-      'Participating in code reviews and providing constructive feedback to other developers.',
-    ],
-  },
-  {
-    title: 'React Native Developer',
-    company_name: 'Tesla',
+    title: 'Freelancing & Personal Projects',
+    company_name: 'Freelance',
     icon: tesla,
     iconBg: '#E6DEDD',
-    date: 'Jan 2021 - Feb 2022',
+    date: '2023',
     points: [
-      'Developing and maintaining web applications using React.js and other related technologies.',
-      'Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.',
+      'Developing and maintaining web applications using React.js and other related technologies/frameworks.',
       'Implementing responsive design and ensuring cross-browser compatibility.',
-      'Participating in code reviews and providing constructive feedback to other developers.',
+      'Listening to the client needs and find solutions for them.',
     ],
   },
   {
-    title: 'Web Developer',
-    company_name: 'Shopify',
+    title: 'React.js Front End Course',
+    company_name: 'OpenClassRooms',
+    icon: starbucks,
+    iconBg: '#383E56',
+    date: '2022 - 2023',
+    points: [
+      'Learning web basics (HTML, CSS, JS)',
+      'Worked on 14 different projects throughout the course.',
+      'Developing and maintaining web applications using React.js and other related technologies.',
+      'Implementing responsive design and ensuring cross-browser compatibility.',
+    ],
+  },
+  {
+    title: 'CAD draftsman',
+    company_name: 'Stelia Aerospace',
     icon: shopify,
     iconBg: '#383E56',
-    date: 'Jan 2022 - Jan 2023',
+    date: '2014 - 2015',
     points: [
-      'Developing and maintaining web applications using React.js and other related technologies.',
-      'Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.',
-      'Implementing responsive design and ensuring cross-browser compatibility.',
-      'Participating in code reviews and providing constructive feedback to other developers.',
-    ],
-  },
-  {
-    title: 'Full stack Developer',
-    company_name: 'Meta',
-    icon: meta,
-    iconBg: '#E6DEDD',
-    date: 'Jan 2023 - Present',
-    points: [
-      'Developing and maintaining web applications using React.js and other related technologies.',
-      'Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.',
-      'Implementing responsive design and ensuring cross-browser compatibility.',
-      'Participating in code reviews and providing constructive feedback to other developers.',
+      'CAD computer blabla',
+      'Collaborating with cross-functional teams including calculators, blabla, and other draftsman to work on high-quality engineering',
     ],
   },
 ];

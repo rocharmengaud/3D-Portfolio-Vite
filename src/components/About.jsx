@@ -44,7 +44,7 @@ const About = () => {
         >
           OpenClassRoom&apos;s front-end javascript react course&nbsp;
         </a>
-        and I am now looking for a job.
+        and I am now working on my own projects to gain experience. Feel free to go to the works section of this website to take a look at them.
       </motion.p>
       <div className="flex flex-wrap gap-10 mt-20">
         {services.map((service, index) => (
