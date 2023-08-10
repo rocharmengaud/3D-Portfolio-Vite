@@ -16,8 +16,7 @@ const Hero = () => {
             Hi, I&apos;m <span className="text-[#915eff]">Roch</span>
           </h1>
           <p className={`${styles.heroSubText} mt-2 text-white-100`}>
-            I am a web developer, front end specialist, looking for a company with a work-study program. My objective is to improve my skills and
-            learn fullstack developement.
+            I am a web developer, front end specialist, looking for a company with a work-study program.
           </p>
         </div>
       </div>

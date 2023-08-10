@@ -64,7 +64,7 @@ const Contact = () => {
           <label className="flex flex-col">
             <span className="mb-4 font-medium text-white">Your message</span>
             <textarea
-              rows="7"
+              rows="6"
               name="message"
               required
               value={message}

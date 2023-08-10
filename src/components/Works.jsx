@@ -2,7 +2,7 @@ import Tilt from 'react-parallax-tilt';
 import { motion } from 'framer-motion';
 
 import { styles } from '../styles';
-import { github } from '../assets';
+import { github, playlogo } from '../assets';
 import { SectionWrapper } from '../hoc';
 import { projects } from '../constants';
 import { fadeIn, textVariant } from '../utils/motion';
@@ -24,7 +24,7 @@ const ProjectCard = ({ index, name, description, tags, image, source_code_link, 
               onClick={() => window.open(live_code_link, 'blank')}
               className="violet-gradient flex items-center justify-center w-10 h-10 rounded-full cursor-pointer"
             >
-              <img src={github} alt={github} className="h-1/2 object-contain w-1/2" />
+              <img src={playlogo} alt={playlogo} className="h-1/2 object-contain w-1/2" />
             </div>
           </div>
         </div>

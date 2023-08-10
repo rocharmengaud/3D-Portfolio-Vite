@@ -194,7 +194,7 @@ const projects = [
   },
   {
     name: 'Weather App',
-    description: 'Simple weather application, with a search function.',
+    description: 'Simple weather application, with a search function using API calls from OpenWeatherMap.',
     tags: [
       {
         name: 'Next.js',
@@ -215,7 +215,7 @@ const projects = [
   },
   {
     name: 'Shopping app',
-    description: 'Front end of a shopping website, with cart functionnalities.',
+    description: 'Front end of a showcase shopping website, with cart functionnalities. No back end.',
     tags: [
       {
         name: 'Vite',
@@ -226,7 +226,7 @@ const projects = [
         color: 'green-text-gradient',
       },
       {
-        name: 'React-Bootstrap',
+        name: 'Bootstrap',
         color: 'pink-text-gradient',
       },
     ],
@@ -236,7 +236,7 @@ const projects = [
   },
   {
     name: 'Kasa',
-    description: 'Clone of the popular vacation rentals website.',
+    description: 'Clone of the popular vacation rentals website. OpenClassRooms original project.',
     tags: [
       {
         name: 'React',
