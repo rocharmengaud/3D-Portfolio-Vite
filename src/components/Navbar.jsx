@@ -3,8 +3,7 @@ import { Link } from 'react-router-dom';
 
 import { styles } from '../styles';
 import { navLinks } from '../constants';
-import { menu, close } from '../assets';
-import ralogo from '../assets/ralogo.png';
+import { menu, close, RAlogo } from '../assets';
 
 const Navbar = () => {
   const [active, setActive] = useState('');
@@ -21,7 +20,7 @@ const Navbar = () => {
             window.scrollTo(0, 0);
           }}
         >
-          <img src={ralogo} alt={ralogo} className="object-contain w-16 h-16" />
+          <img src={RAlogo} alt={RAlogo} className="object-contain w-16 h-16" />
           <p className="text-white text-[18px] font-bold cursor-pointer">
             Roch Armengaud <span className="sm:block hidden">3D Portfolio</span>
           </p>

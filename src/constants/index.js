@@ -143,8 +143,8 @@ const experiences = [
     iconBg: '#383E56',
     date: '2014 - 2015',
     points: [
-      'CAD computer blabla',
-      'Collaborating with cross-functional teams including calculators, blabla, and other draftsman to work on high-quality engineering',
+      'Computer Aided Design 3D models conception for aeronautical industries',
+      'Collaborating with cross-functional teams including engineers, calculators, and other draftsman to work on high-quality aeronautical engineering',
     ],
   },
 ];
@@ -169,6 +169,7 @@ const projects = [
     ],
     image: NetflouixImg,
     source_code_link: 'https://github.com/rocharmengaud/netflix-clone',
+    live_code_link: 'https://netflouix-rocharmengaud.vercel.app/',
   },
   {
     name: 'Twittur',
@@ -189,6 +190,7 @@ const projects = [
     ],
     image: TwitturWeb,
     source_code_link: 'https://github.com/rocharmengaud/twitter-clone',
+    live_code_link: 'https://twittur-rocharmengaud.vercel.app/',
   },
   {
     name: 'Weather App',
@@ -209,6 +211,7 @@ const projects = [
     ],
     image: WeatherAppImg,
     source_code_link: 'https://github.com/rocharmengaud/Weather-app',
+    live_code_link: 'https://weather-app-rocharmengaud.vercel.app/',
   },
   {
     name: 'Shopping app',
@@ -229,6 +232,7 @@ const projects = [
     ],
     image: ShoppingAppImg,
     source_code_link: 'https://github.com/rocharmengaud/Shopping-app',
+    live_code_link: 'https://shopping-app-rocharmengaud.vercel.app/',
   },
   {
     name: 'Kasa',
@@ -249,6 +253,7 @@ const projects = [
     ],
     image: KasaWeb,
     source_code_link: 'https://github.com/rocharmengaud/Kasa',
+    live_code_link: 'https://kasa-rocharmengaud.vercel.app/',
   },
 ];
 

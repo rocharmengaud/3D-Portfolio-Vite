@@ -29,6 +29,7 @@ import TwitturWeb from './TwitturWeb.png';
 import WeatherAppImg from './WeatherAppImg.png';
 import ShoppingAppImg from './ShoppingAppImg.png';
 import KasaWeb from './KasaWeb.png';
+import RAlogo from './RAlogo.png';
 
 export {
   logo,
@@ -59,4 +60,5 @@ export {
   WeatherAppImg,
   ShoppingAppImg,
   KasaWeb,
+  RAlogo,
 };

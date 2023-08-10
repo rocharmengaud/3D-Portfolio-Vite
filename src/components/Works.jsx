@@ -7,7 +7,7 @@ import { SectionWrapper } from '../hoc';
 import { projects } from '../constants';
 import { fadeIn, textVariant } from '../utils/motion';
 
-const ProjectCard = ({ index, name, description, tags, image, source_code_link }) => {
+const ProjectCard = ({ index, name, description, tags, image, source_code_link, live_code_link }) => {
   return (
     <motion.div variants={fadeIn('up', 'spring', index * 0.5, 0.75)}>
       <Tilt options={{ max: 45, scale: 1, speed: 450 }} className="bg-tertiary p-5 rounded-2xl sm:w-[300px] w-full">
@@ -21,7 +21,7 @@ const ProjectCard = ({ index, name, description, tags, image, source_code_link }
               <img src={github} alt={github} className="h-1/2 object-contain w-1/2" />
             </div>
             <div
-              onClick={() => window.open(source_code_link, 'blank')}
+              onClick={() => window.open(live_code_link, 'blank')}
               className="violet-gradient flex items-center justify-center w-10 h-10 rounded-full cursor-pointer"
             >
               <img src={github} alt={github} className="h-1/2 object-contain w-1/2" />
@@ -29,7 +29,9 @@ const ProjectCard = ({ index, name, description, tags, image, source_code_link }
           </div>
         </div>
         <div className="mt-5">
-          <h3 className="text-white font-bold text-[24px]">{name}</h3>
+          <h3 onClick={() => window.open(live_code_link, 'blank')} className="text-white font-bold text-[24px] cursor-pointer hover:underline">
+            {name}
+          </h3>
           <p className="mt-2 text-secondary text-[14px]">{description}</p>
         </div>
         <div className="flex flex-wrap gap-2 mt-4">
