@@ -20,9 +20,9 @@ import tailwind from './tech/tailwind.png';
 import typescript from './tech/typescript.png';
 import threejs from './tech/threejs.svg';
 
-import shopify from './company/shopify.png';
-import starbucks from './company/starbucks.png';
-import tesla from './company/tesla.png';
+import balisePng from './company/balisePng.png';
+import OCRLogo from './company/OCRLogo.png';
+import SteliaLogo from './company/STELIA.png';
 
 import NetflouixImg from './NetflouixImg.png';
 import TwitturWeb from './TwitturWeb.png';
@@ -52,13 +52,13 @@ export {
   tailwind,
   typescript,
   threejs,
-  shopify,
-  starbucks,
-  tesla,
   NetflouixImg,
   TwitturWeb,
   WeatherAppImg,
   ShoppingAppImg,
   KasaWeb,
   RAlogo,
+  balisePng,
+  OCRLogo,
+  SteliaLogo,
 };

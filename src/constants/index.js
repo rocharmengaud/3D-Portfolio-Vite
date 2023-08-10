@@ -14,15 +14,15 @@ import {
   mongodb,
   git,
   figma,
-  starbucks,
-  tesla,
-  shopify,
   threejs,
   NetflouixImg,
   TwitturWeb,
   WeatherAppImg,
   ShoppingAppImg,
   KasaWeb,
+  balisePng,
+  OCRLogo,
+  SteliaLogo,
 } from '../assets';
 
 export const navLinks = [
@@ -114,7 +114,7 @@ const experiences = [
   {
     title: 'Freelancing & Personal Projects',
     company_name: 'Freelance',
-    icon: tesla,
+    icon: balisePng,
     iconBg: '#E6DEDD',
     date: '2023',
     points: [
@@ -126,7 +126,7 @@ const experiences = [
   {
     title: 'React.js Front End Course',
     company_name: 'OpenClassRooms',
-    icon: starbucks,
+    icon: OCRLogo,
     iconBg: '#383E56',
     date: '2022 - 2023',
     points: [
@@ -139,8 +139,8 @@ const experiences = [
   {
     title: 'CAD draftsman',
     company_name: 'Stelia Aerospace',
-    icon: shopify,
-    iconBg: '#383E56',
+    icon: SteliaLogo,
+    iconBg: '#FFF',
     date: '2014 - 2015',
     points: [
       'Computer Aided Design 3D models conception for aeronautical industries',
