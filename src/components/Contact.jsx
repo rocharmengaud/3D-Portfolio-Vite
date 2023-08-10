@@ -69,7 +69,7 @@ const Contact = () => {
               required
               value={message}
               onChange={(e) => setMessage(e.target.value)}
-              placeholder="Feel free to ask me anything !"
+              placeholder="Ask me anything ..."
               className="bg-tertiary placeholder:text-secondary px-6 py-4 font-medium text-white border-none rounded-lg outline-none"
             />
           </label>
