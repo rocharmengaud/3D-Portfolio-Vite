@@ -14,14 +14,15 @@ import {
   mongodb,
   git,
   figma,
-  meta,
   starbucks,
   tesla,
   shopify,
-  carrent,
-  jobit,
-  tripguide,
   threejs,
+  NetflouixImg,
+  TwitturWeb,
+  WeatherAppImg,
+  ShoppingAppImg,
+  KasaWeb,
 } from '../assets';
 
 export const navLinks = [
@@ -148,94 +149,107 @@ const experiences = [
   },
 ];
 
-const testimonials = [
-  {
-    testimonial: 'I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.',
-    name: 'Sara Lee',
-    designation: 'CFO',
-    company: 'Acme Co',
-    image: 'https://randomuser.me/api/portraits/women/4.jpg',
-  },
-  {
-    testimonial: "I've never met a web developer who truly cares about their clients' success like Rick does.",
-    name: 'Chris Brown',
-    designation: 'COO',
-    company: 'DEF Corp',
-    image: 'https://randomuser.me/api/portraits/men/5.jpg',
-  },
-  {
-    testimonial: "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-    name: 'Lisa Wang',
-    designation: 'CTO',
-    company: '456 Enterprises',
-    image: 'https://randomuser.me/api/portraits/women/6.jpg',
-  },
-];
-
 const projects = [
   {
-    name: 'Car Rent',
-    description:
-      'Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.',
+    name: 'Netflouix',
+    description: 'Clone of the popular social media website with some back end functionnalities.',
     tags: [
       {
-        name: 'react',
+        name: 'Next.js',
         color: 'blue-text-gradient',
       },
       {
-        name: 'mongodb',
+        name: 'TailwindCSS',
         color: 'green-text-gradient',
       },
       {
-        name: 'tailwind',
+        name: 'Firebase',
         color: 'pink-text-gradient',
       },
     ],
-    image: carrent,
-    source_code_link: 'https://github.com/',
+    image: NetflouixImg,
+    source_code_link: 'https://github.com/rocharmengaud/netflix-clone',
   },
   {
-    name: 'Job IT',
-    description:
-      'Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.',
+    name: 'Twittur',
+    description: 'Clone of the popular social media website with some back end functionnalities.',
     tags: [
       {
-        name: 'react',
+        name: 'Next.js',
         color: 'blue-text-gradient',
       },
       {
-        name: 'restapi',
+        name: 'Prisma',
         color: 'green-text-gradient',
       },
       {
-        name: 'scss',
+        name: 'MongoDB',
         color: 'pink-text-gradient',
       },
     ],
-    image: jobit,
-    source_code_link: 'https://github.com/',
+    image: TwitturWeb,
+    source_code_link: 'https://github.com/rocharmengaud/twitter-clone',
   },
   {
-    name: 'Trip Guide',
-    description:
-      'A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.',
+    name: 'Weather App',
+    description: 'Simple weather application, with a search function.',
     tags: [
       {
-        name: 'nextjs',
+        name: 'Next.js',
         color: 'blue-text-gradient',
       },
       {
-        name: 'supabase',
+        name: 'Typescript',
         color: 'green-text-gradient',
       },
       {
-        name: 'css',
+        name: 'TailwindCSS',
         color: 'pink-text-gradient',
       },
     ],
-    image: tripguide,
-    source_code_link: 'https://github.com/',
+    image: WeatherAppImg,
+    source_code_link: 'https://github.com/rocharmengaud/Weather-app',
+  },
+  {
+    name: 'Shopping app',
+    description: 'Front end of a shopping website, with cart functionnalities.',
+    tags: [
+      {
+        name: 'Vite',
+        color: 'blue-text-gradient',
+      },
+      {
+        name: 'Typescript',
+        color: 'green-text-gradient',
+      },
+      {
+        name: 'React-Bootstrap',
+        color: 'pink-text-gradient',
+      },
+    ],
+    image: ShoppingAppImg,
+    source_code_link: 'https://github.com/rocharmengaud/Shopping-app',
+  },
+  {
+    name: 'Kasa',
+    description: 'Clone of the popular vacation rentals website.',
+    tags: [
+      {
+        name: 'React',
+        color: 'blue-text-gradient',
+      },
+      {
+        name: 'TailwindCSS',
+        color: 'green-text-gradient',
+      },
+      {
+        name: 'JSON Data',
+        color: 'pink-text-gradient',
+      },
+    ],
+    image: KasaWeb,
+    source_code_link: 'https://github.com/rocharmengaud/Kasa',
   },
 ];
 
-export { services, technologies, experiences, testimonials, projects };
+export { services, technologies, experiences, projects };

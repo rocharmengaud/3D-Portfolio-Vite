@@ -13,10 +13,16 @@ const ProjectCard = ({ index, name, description, tags, image, source_code_link }
       <Tilt options={{ max: 45, scale: 1, speed: 450 }} className="bg-tertiary p-5 rounded-2xl sm:w-[300px] w-full">
         <div className="relative w-full h-[230px]">
           <img src={image} alt={name} className="rounded-2xl object-cover w-full h-full" />
-          <div className="card-img_hover absolute inset-0 flex justify-end m-3">
+          <div className="card-img_hover absolute inset-0 flex justify-end gap-2 m-3">
             <div
               onClick={() => window.open(source_code_link, 'blank')}
               className="black-gradient flex items-center justify-center w-10 h-10 rounded-full cursor-pointer"
+            >
+              <img src={github} alt={github} className="h-1/2 object-contain w-1/2" />
+            </div>
+            <div
+              onClick={() => window.open(source_code_link, 'blank')}
+              className="violet-gradient flex items-center justify-center w-10 h-10 rounded-full cursor-pointer"
             >
               <img src={github} alt={github} className="h-1/2 object-contain w-1/2" />
             </div>
