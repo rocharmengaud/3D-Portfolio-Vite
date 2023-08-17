@@ -7,7 +7,8 @@ import * as random from 'maath/random/dist/maath-random.esm';
 const Stars = (props) => {
   const ref = useRef();
 
-  const sphere = random.inSphere(new Float32Array(4500), { radius: 1.2 });
+  // Stars themselves, 1000 instances created
+  const sphere = random.inSphere(new Float32Array(1000), { radius: 1.2 });
 
   // Making the stars (points) rotate around
   useFrame((state, delta) => {

@@ -13,7 +13,7 @@ const ScreensModel = ({ isMobile }) => {
       <primitive
         object={screens.scene}
         scale={isMobile ? 0.7 : 0.8}
-        position={isMobile ? [0, -2.7, 0.1] : [0, -3.5, 0]}
+        position={isMobile ? [0, -3.1, 0.1] : [0, -3.5, 0]}
         rotation={isMobile ? [0, 1.7, -0.03] : [0, 1.3, -0.03]}
       />
     </mesh>
