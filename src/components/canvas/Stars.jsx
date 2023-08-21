@@ -8,7 +8,7 @@ const Stars = (props) => {
   const ref = useRef();
 
   // Stars themselves, 1000 instances created
-  const sphere = random.inSphere(new Float32Array(1000), { radius: 1.2 });
+  const sphere = random.inSphere(new Float32Array(1200), { radius: 1.2 });
 
   // Making the stars (points) rotate around
   useFrame((state, delta) => {

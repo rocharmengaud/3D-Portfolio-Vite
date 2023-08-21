@@ -13,6 +13,7 @@ const App = () => {
         </div>
         <About />
         <Experience />
+        {/* faire un isMobile pour faire apparaitre les spheres sur pc mais pas mobile, reduire les spheres, imgs pr mobile*/}
         {/* <Tech /> */}
         <Works />
         <div className="relative z-0">

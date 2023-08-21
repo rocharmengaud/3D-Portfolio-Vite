@@ -22,8 +22,9 @@ const Hero = () => {
       </div>
       <ComputersCanvas />
       {/* MOUSE WITH SCROLL DOWN ANIMATION USING FRAMER MOTION*/}
-      <div className="xs:bottom-10 bottom-32 absolute flex items-center justify-center w-full">
-        <a href="#about">
+      <div className="xs:bottom-10 bottom-6 absolute flex items-center justify-center w-full">
+        <a href="#about" className="flex items-center gap-4">
+          <span className="text-white text-[16px] xs:text-[20px]">Scroll</span>
           <div className="w-[35px] h-[64px] rounded-3xl border-4 border-secondary flex justify-center items-start p-2">
             <motion.div
               animate={{
@@ -37,6 +38,7 @@ const Hero = () => {
               className="bg-secondary w-3 h-3 mb-1 rounded-full"
             />
           </div>
+          <span className="text-white text-[16px] xs:text-[20px]">Down</span>
         </a>
       </div>
     </section>

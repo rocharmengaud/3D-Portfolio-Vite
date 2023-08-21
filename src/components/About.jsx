@@ -33,7 +33,7 @@ const About = () => {
     <>
       {/* textVariant() animates text */}
       <motion.div variants={textVariant()}>
-        <p className={styles.sectionSubText}>Introduction</p>
+        <p className={styles.sectionSubText}>About me</p>
         <h2 className={styles.sectionHeadText}>Overview.</h2>
       </motion.div>
       <motion.p variants={fadeIn('', '', 0.5, 2)} className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30x]">

@@ -124,14 +124,14 @@ const experiences = [
     ],
   },
   {
-    title: 'React.js Front End Course',
+    title: 'React.js Online Front End Course',
     company_name: 'OpenClassRooms',
     icon: OCRLogo,
     iconBg: '#383E56',
     date: '2022 - 2023',
     points: [
       'Learning web basics (HTML, CSS, JS)',
-      'Worked on 14 different projects throughout the course.',
+      'Worked on 14 different projects throughout the 1 year course.',
       'Developing and maintaining web applications using React.js and other related technologies.',
       'Implementing responsive design and ensuring cross-browser compatibility.',
     ],
