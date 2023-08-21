@@ -1,10 +1,11 @@
-import { BrowserRouter } from 'react-router-dom';
+// import { BrowserRouter } from 'react-router-dom';
 
 import { About, Contact, Experience, Hero, Navbar, Works, StarsCanvas } from './components';
 
 const App = () => {
   return (
-    <BrowserRouter>
+    // <BrowserRouter>
+    <>
       <div className="bg-primary relative z-0">
         {/* this bg-hero-pattern is setup in the tailwind.config.js */}
         <div className="bg-hero-pattern bg-center bg-no-repeat bg-cover">
@@ -21,7 +22,8 @@ const App = () => {
           <StarsCanvas />
         </div>
       </div>
-    </BrowserRouter>
+    </>
+    // </BrowserRouter>
   );
 };
 

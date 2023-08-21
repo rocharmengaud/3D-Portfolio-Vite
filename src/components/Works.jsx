@@ -3,9 +3,9 @@ import { motion } from 'framer-motion';
 
 import { styles } from '../styles';
 import { github, playlogo } from '../assets';
-import { SectionWrapper } from '../hoc';
 import { projects } from '../constants';
 import { fadeIn, textVariant } from '../utils/motion';
+import { Section } from './Section';
 
 const ProjectCard = ({ index, name, description, tags, image, source_code_link, live_code_link }) => {
   return (
@@ -48,7 +48,7 @@ const ProjectCard = ({ index, name, description, tags, image, source_code_link, 
 
 const Works = () => {
   return (
-    <>
+    <Section idName="works">
       <motion.div variants={textVariant()}>
         <p className={styles.sectionSubText}>My work</p>
         <h2 className={styles.sectionHeadText}>Projects.</h2>
@@ -64,8 +64,8 @@ const Works = () => {
           <ProjectCard key={`project-${index}`} index={index} {...project} />
         ))}
       </div>
-    </>
+    </Section>
   );
 };
 
-export default SectionWrapper(Works, 'works');
+export default Works;

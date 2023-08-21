@@ -4,8 +4,7 @@ import { motion } from 'framer-motion';
 import { styles } from '../styles';
 import { services } from '../constants';
 import { fadeIn, textVariant } from '../utils/motion';
-
-import { SectionWrapper } from '../hoc';
+import { Section } from './Section';
 
 const ServiceCard = ({ title, icon, index }) => {
   return (
@@ -30,7 +29,7 @@ const ServiceCard = ({ title, icon, index }) => {
 
 const About = () => {
   return (
-    <>
+    <Section idName="about">
       {/* textVariant() animates text */}
       <motion.div variants={textVariant()}>
         <p className={styles.sectionSubText}>About me</p>
@@ -51,8 +50,8 @@ const About = () => {
           <ServiceCard key={service.title} index={index} {...service} />
         ))}
       </div>
-    </>
+    </Section>
   );
 };
 
-export default SectionWrapper(About, 'about');
+export default About;

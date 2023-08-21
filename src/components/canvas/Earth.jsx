@@ -1,31 +1,25 @@
-import { Suspense } from 'react';
-import { Canvas } from '@react-three/fiber';
-import { OrbitControls, useGLTF } from '@react-three/drei';
-
+import { Suspense, useRef, forwardRef } from 'react';
+import { Canvas, useFrame } from '@react-three/fiber';
+import { useGLTF } from '@react-three/drei';
 import CanvasLoader from '../Loader';
 
 const Earth = () => {
   const earth = useGLTF('./planet/scene.gltf');
+
+  useFrame(() => {
+    const [root] = earth.scene.children;
+    root.rotation.z += 0.01;
+    console.log(root.rotation.y);
+  });
+
   // Forcing rotation on one axis only with position and rotation on Y axis
-  return <primitive object={earth.scene} scale={2.5} position-y={0} rotation-y={0} />;
+  return <primitive object={earth.scene} scale={2.5} position-y={0} />;
 };
 
 const EarthCanvas = () => {
   return (
-    <Canvas
-      shadows
-      frameloop="demand"
-      gl={{ preserveDrawingBuffer: true }}
-      camera={{
-        // fov here zooms in the model
-        fov: 45,
-        near: 0.1,
-        far: 200,
-        position: [-4, 3, 6],
-      }}
-    >
+    <Canvas shadows gl={{ preserveDrawingBuffer: true }}>
       <Suspense fallback={<CanvasLoader />}>
-        <OrbitControls autoRotate enableZoom={false} maxPolarAngle={Math.PI / 2} minPolarAngle={Math.PI / 2} />
         <Earth />
       </Suspense>
     </Canvas>

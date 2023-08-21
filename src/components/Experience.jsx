@@ -5,8 +5,8 @@ import 'react-vertical-timeline-component/style.min.css';
 
 import { styles } from '../styles';
 import { experiences } from '../constants';
-import { SectionWrapper } from '../hoc';
 import { textVariant } from '../utils/motion';
+import { Section } from './Section';
 
 const ExperienceCard = ({ experience }) => {
   return (
@@ -40,7 +40,7 @@ const ExperienceCard = ({ experience }) => {
 
 const Experience = () => {
   return (
-    <>
+    <Section idName="experience">
       <motion.div variants={textVariant()}>
         <p className={styles.sectionSubText}>What did I do so far?</p>
         <h2 className={styles.sectionHeadText}>Work experience.</h2>
@@ -52,8 +52,8 @@ const Experience = () => {
           ))}
         </VerticalTimeline>
       </div>
-    </>
+    </Section>
   );
 };
 
-export default SectionWrapper(Experience, '');
+export default Experience;
